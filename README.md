@@ -11,7 +11,7 @@ Rilevamento non supervisionato di anomalie in serie temporali di sensori ambient
 
 - **Origine**: [Zenodo DOI 10.5281/zenodo.5793685](https://doi.org/10.5281/zenodo.5793685)
 - **Sottoinsieme analizzato**: 5 sensori su 27 (gli unici con copertura del periodo del guasto), maggio-agosto 2020, ricampionati a frequenza oraria (~2.400 ore)
-- **Evento certificato**: guasto hardware del sensore AF27 il 14 luglio 2020 (crollo simultaneo di temperatura e umidità)
+- **Evento**: guasto hardware del sensore AF27 il 14 luglio 2020 (crollo simultaneo di temperatura e umidità)
 
 ### Sruttura e flusso di lavoro
 
