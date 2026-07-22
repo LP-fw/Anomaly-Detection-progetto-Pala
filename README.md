@@ -4,13 +4,13 @@ Progetto d'esame per il corso di Ottimizzazione, Intelligenza Artificiale e Mach
 
 ---
 
-Rilevamento non supervisionato di anomalie in serie temporali di sensori ambientali (temperatura e umidità) provenienti da una serra sperimentale belga dedicata alla coltura di pomodori. Sette metodi di outlier detection vengono confrontati sistematicamente su tre mesi di dati orari, usando come sanity check un guasto hardware documentato e il consenso tra metodi come indicatore di affidabilità in assenza di etichette complete.
+Rilevamento non supervisionato di anomalie in serie temporali di sensori ambientali (temperatura e umidità) provenienti da una serra sperimentale belga dedicata alla coltura di pomodori. Sette metodi di outlier detection vengono confrontati sistematicamente su tre mesi di dati orari, usando come sanity check un guasto hardware e il consenso tra metodi come indicatore di affidabilità in assenza di etichette complete.
 
 ### Dataset
 
 
 - **Origine**: [Zenodo DOI 10.5281/zenodo.5793685](https://doi.org/10.5281/zenodo.5793685)
-- **Sottoinsieme analizzato**: 5 sensori su 27 (gli unici con copertura del periodo del guasto), maggio–agosto 2020, ricampionati a frequenza oraria (~2.400 ore)
+- **Sottoinsieme analizzato**: 5 sensori su 27 (gli unici con copertura del periodo del guasto), maggio-agosto 2020, ricampionati a frequenza oraria (~2.400 ore)
 - **Evento certificato**: guasto hardware del sensore AF27 il 14 luglio 2020 (crollo simultaneo di temperatura e umidità)
 
 ### Sruttura e flusso di lavoro
@@ -41,9 +41,9 @@ Valutazione  comparativa: sanity check sul guasto documentato, tassi di allarme,
 
 ### Risultati principali
 
-- **5 metodi su 7** riconoscono entrambe le ore certificate del guasto; i due fallimenti sono limiti strutturali previsti dalla teoria.
-- **Il consenso isola il guasto senza usare le etichette**: le uniche 3 ore dell'intero periodo con ≥5 metodi concordi sono le 3 ore del 14 luglio.
-- **Il consenso recupera un'ora non certificabile dal ground truth** (le 13:00, dato grezzo mancante), segnalata da 6 metodi su 7.
+- **5 metodi su 7** riconoscono entrambe le ore del guasto.
+- **Il consenso isola l'anomalia senza usare le etichette**: le uniche 3 ore dell'intero periodo con ≥5 metodi concordi sono le 3 ore del 14 luglio.
+- **Il consenso segnala un'ora non certificabile** (le 13:00, dato grezzo mancante), isolata da 6 metodi su 7.
 - Nodo centrale: **la rappresentazione dei dati conta più della scelta dell'algoritmo**
 
 
